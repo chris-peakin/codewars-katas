@@ -1,0 +1,1 @@
+This is a locally stored version of the katas attempted on codewars. This will allow for storing the potential solutions offline and allowing for code reviews from my peers.

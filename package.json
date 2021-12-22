@@ -1,0 +1,15 @@
+{
+  "name": "codewars-katas",
+  "version": "1.0.0",
+  "description": "This is a locally stored version of the katas attempted on codewars",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^27.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Chris Peakin",
+  "license": "ISC"
+}
