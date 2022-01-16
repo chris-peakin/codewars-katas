@@ -6,7 +6,12 @@ const monkeyCount = () =>{
 
 };
 
+const maps = () => {
+
+};
+
 module.exports = {
     multiply,
-    monkeyCount
+    monkeyCount,
+    maps
 };

@@ -1,6 +1,7 @@
 const {
     multiply,
-    monkeyCount
+    monkeyCount,
+    maps
 } = require('../src/8thkyu');
 
 describe('multply', () =>{
@@ -36,5 +37,20 @@ describe("monkeyCount", () => {
             let randNum = (Math.random() * 100);
             expect(monkeyCount(randNum)).toBe(solution(randNum));
         };
+    });
+});
+
+describe("maps", () => {
+    it("basic tests", () => {
+        expect(maps([1, 2, 3])).toBe([2, 4, 6]);
+        expect(maps([4, 1, 1, 1, 4])).toBe([8, 2, 2, 2, 8]);
+        expect(maps([2, 2, 2, 2, 2])).toBe([4, 4, 4, 4, 4]);
+    });
+    it("generic test", () => {
+        let a = jest.fn();
+        let b = jest.fn();
+        let c = jest.fn();
+        let d = jest.fn();
+        expect(maps([a, b, c, d])).toBe([a*2, b*2, c*2, d*2]);
     });
 });
